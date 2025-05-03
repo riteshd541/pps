@@ -1,0 +1,35 @@
+.gallery {
+  column-count: 3;
+  column-gap: 16px;
+  padding: 40px;
+}
+
+.imageWrapper {
+  break-inside: avoid;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover {
+  transform: scale(1.02);
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+@media (max-width: 1024px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    column-count: 1;
+  }
+}
