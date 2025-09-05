@@ -1,40 +1,46 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter, usePathname } from "next/navigation"; // ✅ Correct for App Router
+import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const router = useRouter();
-  const pathname = usePathname(); // this replaces router.pathname
+  const pathname = usePathname();
 
   const PageRoutes = [
     { id: 1, routeName: "Home", pageUrl: "/" },
     { id: 2, routeName: "Services", pageUrl: "/services" },
     { id: 3, routeName: "About Us", pageUrl: "/about-us" },
-    {
-      id: 4,
-      routeName: "Clients",
-      pageUrl: "/client-",
-    },
+    { id: 4, routeName: "Clients", pageUrl: "/client-" },
     { id: 5, routeName: "Contact Us", pageUrl: "/contact-us" },
     { id: 6, routeName: "Join our Team", pageUrl: "/join-our-team" },
   ];
 
+  // Close drawer when route changes
   useEffect(() => {
     setDrawerOpen(false);
   }, [pathname]);
 
+  // Prevent scrolling when drawer is open
+  useEffect(() => {
+    if (drawerOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [drawerOpen]);
+
   return (
-    <header className="bg-black shadow-md">
+    <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
       {/* Desktop Header */}
       <div className="max-w-6xl mx-auto flex items-center justify-between py-3 px-4 lg:px-0">
         <div className="cursor-pointer">
           <img
-            src="/pps-logo-w.png"
+            src="/pps-logo-w.png?v=2"
             alt="Logo"
-            className="w-20"
+            className="w-24"
             onClick={() => router.push("/")}
           />
         </div>
@@ -43,19 +49,20 @@ const Header = () => {
             <Link key={pr.id} href={pr.pageUrl}>
               <p
                 className={`${
-                  pathname === pr.pageUrl ? "text-blue-500" : "text-gray-700"
-                } text-lg font-semibold hover:text-blue-500 transition-colors`}
+                  pathname === pr.pageUrl ? "text-blue-400" : "text-white"
+                } text-lg font-semibold hover:text-blue-400 transition-colors`}
               >
                 {pr.routeName}
               </p>
             </Link>
           ))}
         </div>
+
         {/* Mobile Menu Icon */}
         <div className="lg:hidden">
           <button
             onClick={() => setDrawerOpen(!drawerOpen)}
-            className="text-gray-700"
+            className="text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -77,13 +84,13 @@ const Header = () => {
 
       {/* Mobile Drawer */}
       {drawerOpen && (
-        <div className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-50">
-          <div className="bg-white w-64 h-full p-5 space-y-6">
-            <div className="flex justify-between">
-              <img src="/pps-logo.png" alt="Logo" className="w-20" />
+        <div className="lg:hidden fixed inset-0 bg-black/80 z-50 flex">
+          <div className="bg-black/90 w-64 h-full p-5 space-y-6 text-white">
+            <div className="flex justify-between items-center">
+              <img src="/pps-logo-w.png?v=2" alt="Logo" className="w-20" />
               <button
                 onClick={() => setDrawerOpen(false)}
-                className="text-gray-700"
+                className="text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -106,10 +113,8 @@ const Header = () => {
                 <Link key={pr.id} href={pr.pageUrl}>
                   <p
                     className={`${
-                      pathname === pr.pageUrl
-                        ? "text-blue-500"
-                        : "text-gray-700"
-                    } text-lg font-semibold block hover:text-blue-500 transition-colors`}
+                      pathname === pr.pageUrl ? "text-blue-400" : "text-white"
+                    } text-lg font-semibold block hover:text-blue-400 transition-colors`}
                     onClick={() => setDrawerOpen(false)}
                   >
                     {pr.routeName}
@@ -118,6 +123,9 @@ const Header = () => {
               ))}
             </div>
           </div>
+
+          {/* Click outside to close */}
+          <div className="flex-1" onClick={() => setDrawerOpen(false)}></div>
         </div>
       )}
     </header>

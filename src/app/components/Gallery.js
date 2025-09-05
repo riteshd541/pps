@@ -3,16 +3,22 @@
 import styles from "./Gallery.module.css";
 
 const images = [
-  "/assets/gallery1.jpg",
-  "/assets/gallery2.jpg",
-  "/assets/gallery3.jpg",
-  "/assets/gallery4.jpg",
-  "/assets/gallery5.jpg",
-  "/assets/gallery6.jpg",
-  "/assets/gallery7.jpg",
-  "/assets/gallery8.jpg",
+  "/gallery/1.jpg",
+  "/gallery/2.jpg",
+  "/gallery/3.jpg",
+  "/gallery/4.jpg",
+  "/gallery/5.jpg",
+  "/gallery/6.jpg",
+  "/gallery/7.jpg",
+  "/gallery/c.jpg",
+  "/gallery/1.jpg",
+  "/gallery/2.jpg",
+  "/gallery/3.jpg",
+  "/gallery/4.jpg",
+  "/gallery/5.jpg",
+  "/gallery/6.jpg",
+  "/gallery/7.jpg",
 ];
-
 export default function Gallery() {
   return (
     <div className={styles.gallery}>
