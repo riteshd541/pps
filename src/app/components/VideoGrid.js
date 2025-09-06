@@ -49,17 +49,17 @@ export default function YouTubeVideoGrid() {
         return new window.YT.Player(`player-${i}`, {
           videoId,
           playerVars: {
-            autoplay: 1,
-            mute: 1,
+            autoplay: 0, // ⬅ stop autoplay
+            mute: 0, // ⬅ unmute by default
             controls: 0,
             modestbranding: 1,
             rel: 0,
             showinfo: 0,
           },
           events: {
-            onReady: (event) => {
-              event.target.playVideo();
-              setPlayingStatus((prev) => ({ ...prev, [i]: true }));
+            onReady: () => {
+              // ❌ removed auto play
+              setPlayingStatus((prev) => ({ ...prev, [i]: false }));
             },
           },
         });
@@ -67,7 +67,6 @@ export default function YouTubeVideoGrid() {
       setPlayers(newPlayers);
     }
   }, []);
-
   const togglePlay = (index) => {
     const player = players[index];
     if (!player) return;

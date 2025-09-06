@@ -10,7 +10,7 @@ export default function ModernApproachHero() {
         <div className="hero-image hero-image-left">
           {/* Replace with your image */}
           <Image
-            src="/assets/gallery1.jpg"
+            src="/feb.jpg"
             alt="Bride closeup"
             width={400}
             height={500}
@@ -20,40 +20,26 @@ export default function ModernApproachHero() {
         </div>
         <div className="hero-text">
           <h1>
-            <span className="modern">A MODERN APPROACH</span>
+            <span className="modern">Turning Emotions</span>
             <br />
-            <span className="age-old">to an AGE OLD TRADITION</span>
+            <span className="age-old"> Into Art</span>
           </h1>
+
           <p>
-            Considered to be the epitome of Modern Photography and Filmmaking,
-            HOTC has transformed the Indian Wedding landscape on a regular
-            basis. For almost a decade House On The Clouds has been creating
-            photographs and films which are timeless and have been etched in
-            memories of thousands of people forever.
+            At Picture Perfect Studio, photography is more than just our
+            profession – it’s our passion. Founded by Alok and driven by a
+            creative vision, our studio blends artistic storytelling with
+            cutting-edge technology. With years of experience and a dedication
+            to perfection, we ensure that every click captures the essence of
+            your celebration.
           </p>
           <p>
-            Awarded as the Wedding Filmmaker of the year for four consecutive
-            years at the Weddingsutra awards along with numerous other awards
-            HOTC is the only company listed on IMDB for its award winning films.
+            From intimate couple shoots to lavish wedding albums, we go beyond
+            photography — we preserve emotions, frame by frame.
           </p>
           <div className="hero-logos">
-            <span>VOGUE</span>
-            <span>COSMOPOLITAN</span>
-            <span>HELLO!</span>
-            <span>BRIDES TODAY</span>
-            <span>TRAVEL+LEISURE</span>
+            <img src="/feature.png" alt="Awards" />
           </div>
-        </div>
-        <div className="hero-image hero-image-right">
-          {/* Replace with your image */}
-          <Image
-            src="/assets/gallery2.jpg"
-            alt="Bride with scenic background"
-            width={400}
-            height={500}
-            className="image"
-            priority
-          />
         </div>
       </div>
       <style jsx>{`
@@ -101,6 +87,7 @@ export default function ModernApproachHero() {
           color: #444;
           margin-bottom: 1rem;
           max-width: 600px;
+          text-align: justify;
         }
         .hero-logos {
           display: flex;
@@ -116,9 +103,13 @@ export default function ModernApproachHero() {
             flex-direction: column;
             align-items: center;
           }
+          .hero-image {
+            display: none;
+          }
           .hero-image,
           .hero-text {
             flex: 1 1 100%;
+            text-align: center;
             max-width: 100%;
           }
         }

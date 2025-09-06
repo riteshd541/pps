@@ -11,9 +11,9 @@ const Header = () => {
 
   const PageRoutes = [
     { id: 1, routeName: "Home", pageUrl: "/" },
-    { id: 2, routeName: "Services", pageUrl: "/services" },
-    { id: 3, routeName: "About Us", pageUrl: "/about-us" },
-    { id: 4, routeName: "Clients", pageUrl: "/client-" },
+    { id: 2, routeName: "About Us", pageUrl: "/about-us" },
+    { id: 3, routeName: "Portfolio", pageUrl: "/portfolio" },
+    { id: 4, routeName: "Testimonials", pageUrl: "/testimonials" },
     { id: 5, routeName: "Contact Us", pageUrl: "/contact-us" },
     { id: 6, routeName: "Join our Team", pageUrl: "/join-our-team" },
   ];
@@ -38,12 +38,13 @@ const Header = () => {
       <div className="max-w-6xl mx-auto flex items-center justify-between py-3 px-4 lg:px-0">
         <div className="cursor-pointer">
           <img
-            src="/pps-logo-w.png?v=2"
+            src="/final.png"
             alt="Logo"
-            className="w-24"
+            className="w-[160px] sm:w-[200px]"
             onClick={() => router.push("/")}
           />
         </div>
+
         <div className="hidden lg:flex space-x-8">
           {PageRoutes.map((pr) => (
             <Link key={pr.id} href={pr.pageUrl}>

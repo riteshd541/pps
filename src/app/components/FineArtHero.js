@@ -6,7 +6,7 @@ export default function FineArtHero() {
   return (
     <section
       className="relative w-full h-screen bg-cover bg-center flex items-center justify-between px-10 lg:px-24 py-10"
-      style={{ backgroundImage: 'url("/bg-image.jpg")' }}
+      style={{ backgroundImage: 'url("/main-2.jpg")' }}
     >
       <div className="absolute inset-0 bg-black/20 z-0" />
 

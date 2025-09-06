@@ -14,9 +14,9 @@ export default function Home() {
     <div>
       <Header />
       <HeroSection />
+      <ModernApproachHero />
       <Gallery />
       <AwardWinningFilms />
-      <ModernApproachHero />
       <SoulCinemaSection />
       <FineArtHero />
       <VideoGrid />

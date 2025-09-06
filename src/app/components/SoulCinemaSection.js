@@ -7,7 +7,7 @@ export default function SoulCinemaSection() {
       <div className="soul-cinema-video-wrapper">
         <video
           className="soul-cinema-video"
-          src="/assets/hero.mp4"
+          src="/Teaser.mp4"
           autoPlay
           muted
           loop
