@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Play, Pause } from "lucide-react";
 
 const getVideoIdFromUrl = (url) => {
   const match = url.match(/embed\/([^?&]+)/);
@@ -30,7 +29,6 @@ export default function YouTubeVideoGrid() {
 
   const playerRefs = useRef([]);
   const [players, setPlayers] = useState([]);
-  const [playingStatus, setPlayingStatus] = useState({});
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
@@ -49,40 +47,22 @@ export default function YouTubeVideoGrid() {
         return new window.YT.Player(`player-${i}`, {
           videoId,
           playerVars: {
-            autoplay: 0, // ⬅ stop autoplay
-            mute: 0, // ⬅ unmute by default
-            controls: 0,
+            autoplay: 0,
+            mute: 0,
+            controls: 1, // ✅ YouTube controls visible
             modestbranding: 1,
             rel: 0,
             showinfo: 0,
-          },
-          events: {
-            onReady: () => {
-              // ❌ removed auto play
-              setPlayingStatus((prev) => ({ ...prev, [i]: false }));
-            },
           },
         });
       });
       setPlayers(newPlayers);
     }
   }, []);
-  const togglePlay = (index) => {
-    const player = players[index];
-    if (!player) return;
-
-    const isPlaying = player.getPlayerState() === window.YT.PlayerState.PLAYING;
-    if (isPlaying) {
-      player.pauseVideo();
-    } else {
-      player.playVideo();
-    }
-    setPlayingStatus((prev) => ({ ...prev, [index]: !isPlaying }));
-  };
 
   return (
     <section className="w-full px-4 py-12 bg-pink">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 gap-8">
         {youtubeLinks.map((link, index) => (
           <div
             key={index}
@@ -95,17 +75,11 @@ export default function YouTubeVideoGrid() {
               ref={(el) => (playerRefs.current[index] = el)}
               className="absolute top-0 left-0 w-full h-full"
             />
-            {hoveredIndex === index && !playingStatus[index] && (
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white bg-black/50 p-3 rounded">
+            {hoveredIndex === index && (
+              <div className="absolute top-3 left-3 z-10 text-white bg-black/50 px-2 py-1 rounded">
                 {link.title}
               </div>
             )}
-            <button
-              onClick={() => togglePlay(index)}
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white/70 hover:bg-white text-black p-3 rounded-full shadow-md"
-            >
-              {playingStatus[index] ? <Pause size={24} /> : <Play size={24} />}
-            </button>
           </div>
         ))}
       </div>

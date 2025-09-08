@@ -16,7 +16,7 @@ const Header = ({ backgroundColor }) => {
     { id: 3, routeName: "Portfolio", pageUrl: "/portfolio" },
     { id: 4, routeName: "Testimonials", pageUrl: "/testimonials" },
     { id: 5, routeName: "Contact Us", pageUrl: "/contact" },
-    { id: 6, routeName: "Join our Team", pageUrl: "/team" },
+    { id: 6, routeName: "Careers", pageUrl: "/careers" },
   ];
 
   // Close drawer when route changes
