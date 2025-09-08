@@ -95,7 +95,7 @@ const Header = ({ backgroundColor }) => {
           <div className="lg:hidden fixed inset-0 bg-black/80 z-50 flex">
             <div className="bg-black/90 w-64 h-full p-5 space-y-6 text-white">
               <div className="flex justify-between items-center">
-                <img src="/pps-logo-w.png?v=2" alt="Logo" className="w-20" />
+                <img src="/final.png" alt="Logo" className="w-[160px]" />
                 <button
                   onClick={() => setDrawerOpen(false)}
                   className="text-white"

@@ -25,14 +25,14 @@ export default function FineArtHero() {
           selected weddings only and we believe this deserves a website of its
           own.
         </p>
-        <a
+        {/* <a
           href="https://ibtida.co"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-[#a28e64] text-white px-6 py-3 rounded-md font-medium hover:bg-[#8b7955] transition"
         >
           Visit Ibtida.Co
-        </a>
+        </a> */}
       </div>
     </section>
   );
