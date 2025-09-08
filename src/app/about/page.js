@@ -34,13 +34,13 @@ const milestones = [
   },
   {
     year: "2020",
-    title: " Second office set up at Alok’s home",
+    title: " Second office set up at home",
     description: " A space filled with dreams and creativity",
     image: "/about/2020.jpg",
   },
   {
     year: "2022",
-    title: " Dream office set up at Alok’s home",
+    title: "Finally ! Dream office set up",
     description:
       "2022, fueled by hard work and support, we made a bold investment and launched our innovative third workspace.",
     image: "/about/2022.jpg",
@@ -112,8 +112,12 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <h1 className="text-5xl font-extrabold text-gray-900 mb-4 text-center mt-16">
+        <h1 className="text-5xl font-extrabold text-gray-900 mb-16 text-center mt-16">
           2024 -Today: Team of 30+ members
+        </h1>
+        <img src="/about/team.jpg" alt="Team" className="w-full  shadow-lg" />
+        <h1 className="text-5xl font-extrabold text-gray-900  text-center mt-16 mb-16">
+          Created 500+ memories
         </h1>
         <img
           src="/about/FINAL_COVER.jpg"
