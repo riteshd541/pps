@@ -3,21 +3,17 @@ import React from "react";
 const AwardWinningFilms = () => {
   const films = [
     {
-      title: "Love In Second Innings",
+      title: "Zoya & Sahil",
       description:
-        "Second marriage, for many, is still a taboo. And this story illustrates why it's not. It's a treatise on how the past doesn't come in the way of love and respect.",
-      awards: [
-        "WEDDING FILMMAKER OF THE YEAR 2012-2013, 2018",
-        "PLATINUM FILM OF THE YEAR 2017",
-      ],
-      videoUrl: "https://www.youtube.com/embed/l8cMzzHomhc?si=BNpH_jTQOZH7FSf6",
+        "What an unforgettable day capturing the wedding of Zoya and Sahil! From the joyful pre-wedding moments to the emotional vows, every second was filled with love and celebration. Joya looked absolutely stunning, and Sahil couldn’t stop smiling — the connection between them was beautiful to witness. The vibrant colors, heartfelt traditions, and energetic dances made the entire event magical. Family and friends brought so much warmth, laughter, and emotion. It was more than a wedding; it was a celebration of two hearts becoming one. I’m honored to have filmed such a special beginning to their forever journey",
+
+      videoUrl: "https://www.youtube.com/embed/PCwOz-Ilq3c?si=5lEMDTdicYIowsZG",
     },
     {
-      title: "Twenty Years in the Making",
+      title: "Shanshank & Urvashi",
       description:
-        "This one is special, very special. Hiba and Akkar's story took us on a journey all the way from Hiba's childhood till their reception in Bhopal.",
-      awards: ["WEDDING INFLUENCERS OF THE YEAR 2011"],
-      videoUrl: "https://www.youtube.com/embed/X3H5ywNrLhk?si=5lRmB2cDasptQdPg",
+        "What an incredible journey it was capturing the beautiful wedding of Shashank and Urvashi! From the very first frame, their love radiated through every glance, every smile, and every moment shared. This wasn't just a wedding – it was a celebration of two souls coming together in the most magical way.",
+      videoUrl: "https://www.youtube.com/embed/dlb3H8WQqNE?si=1z5_q5gAMbSB1t0i",
     },
   ];
 
@@ -27,17 +23,8 @@ const AwardWinningFilms = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4">
-            Award Winning Films
+            STORIES BY PICTURE PERFECT
           </h2>
-          <div className="flex justify-center items-center space-x-8 mb-8">
-            <span className="text-xl uppercase">Los Angeles</span>
-            <span className="text-4xl font-bold">•</span>
-            <span className="text-xl uppercase">Film Festival</span>
-          </div>
-          <div className="bg-white h-1 w-24 mx-auto mb-8"></div>
-          <h3 className="text-2xl uppercase tracking-widest">
-            Prawts Film Angeles 2020
-          </h3>
         </div>
 
         {/* Films Grid */}
@@ -62,18 +49,6 @@ const AwardWinningFilms = () => {
                 <p className="text-gray-300 mb-6 leading-relaxed">
                   {film.description}
                 </p>
-
-                {/* Awards */}
-                <div className="space-y-4">
-                  {film.awards.map((award, i) => (
-                    <div key={i} className="flex items-start">
-                      <div className="bg-white w-3 h-3 mt-1 mr-3"></div>
-                      <span className="text-sm uppercase tracking-wider">
-                        {award}
-                      </span>
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
           ))}
@@ -91,8 +66,11 @@ const AwardWinningFilms = () => {
             is to justify the vibe of the wedding and the personalities of the
             couple.
           </p>
-          <button className="border border-white px-8 py-3 uppercase tracking-wider hover:bg-white hover:text-black transition-colors duration-300">
-            View All Films
+          <button
+            type="button"
+            className="border border-white px-8 py-3 uppercase tracking-wider hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            View Our Portfolio
           </button>
         </div>
       </div>

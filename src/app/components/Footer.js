@@ -10,6 +10,10 @@ const Footer = () => {
             <h2 className="text-3xl font-bold uppercase tracking-wider mb-4">
               PICTURE PERFECT STUDIO
             </h2>
+            <p>
+              Address: Sec -14 near Bank of Baroda, Indira Nagar, <br />{" "}
+              Lucknow, Uttar Pradesh 226016
+            </p>
             <div className="flex justify-center md:justify-start items-center space-x-4">
               <span className="text-xs">©</span>
               <span className="text-sm">f</span>
@@ -23,18 +27,27 @@ const Footer = () => {
               Lucknow · Uttar Pradesh
             </div>
             <a href="#" className="text-sm hover:underline">
-              Privacy Policy
+              About Us
+            </a>{" "}
+            <br />
+            <a href="#" className="text-sm hover:underline">
+              Portfolio
+            </a>{" "}
+            <br />
+            <a href="# " className="text-sm hover:underline">
+              Contact
             </a>
           </div>
 
           {/* Right side - Contact */}
           <div className="text-center md:text-right">
-            <div className="text-lg mb-2">+91 83182 53621</div>
+            <div className="text-lg mb-2">+91 7905746104 (Sulok Sharan)</div>
+            <div className="text-lg mb-2">+91 8318253621 (Alok Sharan)</div>
             <a
               href="mailto:hello@houseontheclouds.com"
               className="text-lg hover:underline"
             >
-              help@pictureperfectstudio.com
+              ppslko7080@gmail.com
             </a>
           </div>
         </div>

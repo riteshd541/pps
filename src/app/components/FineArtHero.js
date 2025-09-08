@@ -12,27 +12,16 @@ export default function FineArtHero() {
 
       {/* Text Content */}
       <div className="relative z-10 w-full max-w-xl text-white">
-        <h1 className="text-5xl lg:text-6xl font-light italic leading-tight mb-6">
-          FINE-ART CLASS
+        <h1 className="text-4xl lg:text-5xl font-light italic leading-tight mb-6">
+          Fine Work at Picture Perfect Studio
         </h1>
         <p className="text-sm lg:text-base text-gray-100 mb-6 leading-relaxed">
-          Ibtida is our finest offering with fine-art editorial style
-          photography led by Sidharth Sharma, the founder of House On The
-          Clouds. The essence of Ibtida is to create photographs that stand the
-          test of time. The classic, non-intrusive approach of documenting the
-          most important day of your life with bright and airy images that take
-          you back in time. This is an exclusive package which we offer to
-          selected weddings only and we believe this deserves a website of its
-          own.
+          At Picture Perfect Studio, fine work is not just a standard—it’s our
+          promise. Every photograph we capture is a testament to our commitment
+          to quality, precision, and artistry. We believe in the power of
+          details, whether it’s the perfect lighting, the right moment, or the
+          subtle expression that makes a photograph unforgettable.
         </p>
-        {/* <a
-          href="https://ibtida.co"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#a28e64] text-white px-6 py-3 rounded-md font-medium hover:bg-[#8b7955] transition"
-        >
-          Visit Ibtida.Co
-        </a> */}
       </div>
     </section>
   );

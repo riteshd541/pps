@@ -24,6 +24,11 @@ export default function JoinTeam() {
             </div>
 
             <div className={styles.field}>
+              <input type="number" id="number" required />
+              <label htmlFor="number">Phone Number</label>
+            </div>
+
+            <div className={styles.field}>
               <input type="email" id="email" required />
               <label htmlFor="email">Email Address</label>
             </div>
@@ -33,11 +38,14 @@ export default function JoinTeam() {
               <label htmlFor="role">Position Interested In</label>
             </div>
 
-            <div className={styles.fieldFile}>
-              <label htmlFor="photo" className={styles.fileLabel}>
-                Upload Your Photograph
-              </label>
-              <input type="file" id="photo" accept="image/*" required />
+            <div className={styles.field}>
+              <input type="text" id="drive" required />
+              <label htmlFor="drive">Upload Drive Link</label>
+            </div>
+
+            <div className={styles.field}>
+              <input type="text" id="insta" required />
+              <label htmlFor="insta">Upload Instagram Link</label>
             </div>
 
             <div className={styles.field}>

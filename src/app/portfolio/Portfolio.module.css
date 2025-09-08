@@ -1,9 +1,14 @@
 .grid {
   column-count: 5;
   column-gap: 0;
-  padding-top: 2.5rem;
 }
-
+.title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 4rem;
+  padding: 2rem;
+}
 .item {
   break-inside: avoid;
   margin-bottom: 0;

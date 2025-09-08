@@ -35,7 +35,7 @@ function FloatingBtnInner() {
         href="https://www.instagram.com/pictureperfectstudio27/"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
+        className="bg-white text-black p-3 rounded-full shadow-lg  transition"
       >
         <FaInstagram size={20} />
       </a>
@@ -45,7 +45,7 @@ function FloatingBtnInner() {
         href="https://wa.me/917905746104"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition"
+        className="bg-white  text-black p-3 rounded-full shadow-lg transition"
       >
         <FaWhatsapp size={20} />
       </a>
@@ -53,7 +53,7 @@ function FloatingBtnInner() {
       {/* Call */}
       <a
         href="tel:+917905746104"
-        className="bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition"
+        className="bg-white text-black p-3 rounded-full shadow-lg  transition"
       >
         <FaPhone size={20} />
       </a>

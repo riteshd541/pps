@@ -45,6 +45,7 @@ export default function Portfolio() {
     <>
       <Header backgroundColor="bg-black" />
       <section className={styles.portfolio}>
+        <h1 className={styles.title}> Our Portfolio</h1>
         <div className={styles.grid}>
           {images.map((src, index) => (
             <div key={index} className={styles.item}>

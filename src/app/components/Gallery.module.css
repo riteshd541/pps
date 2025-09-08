@@ -1,13 +1,14 @@
 .gallery {
   column-count: 5;
-  padding: 10px;
+  column-gap: 0; /* ✅ no gap between columns */
+  padding: 0; /* ✅ remove padding */
 }
 
 .imageWrapper {
   break-inside: avoid;
-  margin-bottom: 5px;
+  margin: 0; /* ✅ remove margin */
+  padding: 0;
   overflow: hidden;
-  transition: transform 0.3s ease;
 }
 
 .imageWrapper img {
@@ -15,14 +16,10 @@
   height: auto;
   display: block;
 }
+
 @media (max-width: 1024px) {
   .gallery {
     column-count: 2;
+    column-gap: 0; /* keep no gap in responsive too */
   }
 }
-
-/* @media (max-width: 600px) {
-  .gallery {
-    column-count: 1;
-  }
-} */

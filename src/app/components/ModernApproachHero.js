@@ -20,22 +20,29 @@ export default function ModernApproachHero() {
         </div>
         <div className="hero-text">
           <h1>
-            <span className="modern">Turning Emotions</span>
+            <span style={{ color: "black" }} className="modern">
+              Turning Emotions
+            </span>
             <br />
-            <span className="age-old"> Into Art</span>
+            <span style={{ color: "black" }} className="age-old">
+              {" "}
+              Into Art
+            </span>
           </h1>
 
           <p>
-            At Picture Perfect Studio, photography is more than just our
-            profession – it’s our passion. Founded by Alok and driven by a
-            creative vision, our studio blends artistic storytelling with
-            cutting-edge technology. With years of experience and a dedication
-            to perfection, we ensure that every click captures the essence of
-            your celebration.
+            At Picture Perfect Studio, every photograph is more than just an
+            image—it’s a memory frozen in time, a piece of life’s most beautiful
+            story. Founded in 2015 by the dynamic duo, Sulok Sharan and Alok
+            Sharan, our studio is a creative space where passion meets
+            precision, and moments are transformed into timeless works of art.
           </p>
           <p>
-            From intimate couple shoots to lavish wedding albums, we go beyond
-            photography — we preserve emotions, frame by frame.
+            We’re not just photographers—we’re storytellers. And each shot we
+            take is carefully crafted to reflect the soul of the people and
+            moments we’re capturing. With Picture Perfect Studio, you’re not
+            just getting a photograph; you’re getting a piece of your story,
+            told in the most beautiful way possible.
           </p>
           <div className="hero-logos">
             <img src="/feature.png" alt="Awards" />

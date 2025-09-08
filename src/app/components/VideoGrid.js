@@ -10,19 +10,19 @@ const getVideoIdFromUrl = (url) => {
 export default function YouTubeVideoGrid() {
   const youtubeLinks = [
     {
-      url: "https://www.youtube.com/embed/l8cMzzHomhc?si=BNpH_jTQOZH7FSf6",
+      url: "https://www.youtube.com/embed/1pT57alMhF4?si=_MnrkkuPqnccERor",
       title: "Video 1",
     },
     {
-      url: "https://www.youtube.com/embed/l8cMzzHomhc?si=BNpH_jTQOZH7FSf6",
+      url: "https://www.youtube.com/embed/BPqpThBrNPs?si=RTumXvrmsGFO2apP",
       title: "Video 2",
     },
     {
-      url: "https://www.youtube.com/embed/X3H5ywNrLhk?si=5lRmB2cDasptQdPg",
+      url: "https://www.youtube.com/embed/bXC1GkcOtJw?si=oRkzYzsBHZKjkyck",
       title: "Video 3",
     },
     {
-      url: "https://www.youtube.com/embed/X3H5ywNrLhk?si=5lRmB2cDasptQdPg",
+      url: "https://www.youtube.com/embed/zY2L5QzAGuE?si=Qe5qfaBW73HeUvLg",
       title: "Video 4",
     },
   ];

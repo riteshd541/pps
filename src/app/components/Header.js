@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import FloatingBtn from "./FloatingBtn";
+import ScrollToTop from "./ScrollToTop";
 
 const Header = ({ backgroundColor }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -16,15 +17,13 @@ const Header = ({ backgroundColor }) => {
     { id: 3, routeName: "Portfolio", pageUrl: "/portfolio" },
     { id: 4, routeName: "Testimonials", pageUrl: "/testimonials" },
     { id: 5, routeName: "Contact Us", pageUrl: "/contact" },
-    { id: 6, routeName: "Careers", pageUrl: "/careers" },
+    { id: 6, routeName: "Career", pageUrl: "/careers" },
   ];
 
-  // Close drawer when route changes
   useEffect(() => {
     setDrawerOpen(false);
   }, [pathname]);
 
-  // Prevent scrolling when drawer is open
   useEffect(() => {
     if (drawerOpen) {
       document.body.classList.add("overflow-hidden");
@@ -36,6 +35,7 @@ const Header = ({ backgroundColor }) => {
   return (
     <>
       <FloatingBtn />
+      <ScrollToTop />
       <header
         className={`absolute top-0 left-0 w-full z-50 ${
           backgroundColor ? backgroundColor : "bg-transparent"
@@ -58,7 +58,7 @@ const Header = ({ backgroundColor }) => {
                 <p
                   className={`${
                     pathname === pr.pageUrl ? "text-blue-400" : "text-white"
-                  } text-lg font-semibold hover:text-blue-400 transition-colors`}
+                  } text-lg font-normal hover:text-blue-400 transition-colors`}
                 >
                   {pr.routeName}
                 </p>
