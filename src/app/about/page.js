@@ -115,6 +115,11 @@ export default function AboutPage() {
         <h1 className="text-5xl font-extrabold text-gray-900 mb-4 text-center mt-16">
           2024 -Today: Team of 30+ members
         </h1>
+        <img
+          src="/about/FINAL_COVER.jpg"
+          alt="Team"
+          className="w-full  shadow-lg"
+        />
       </main>
       <Footer />
     </>
