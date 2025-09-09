@@ -30,14 +30,14 @@ export default function ModernApproachHero() {
             </span>
           </h1>
 
-          <p>
+          <p className="p-5">
             At Picture Perfect Studio, every photograph is more than just an
             image—it’s a memory frozen in time, a piece of life’s most beautiful
             story. Founded in 2015 by the dynamic duo, Sulok Sharan and Alok
             Sharan, our studio is a creative space where passion meets
             precision, and moments are transformed into timeless works of art.
           </p>
-          <p>
+          <p className="p-5">
             We’re not just photographers—we’re storytellers. And each shot we
             take is carefully crafted to reflect the soul of the people and
             moments we’re capturing. With Picture Perfect Studio, you’re not
