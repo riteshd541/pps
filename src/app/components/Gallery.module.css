@@ -1,12 +1,12 @@
 .gallery {
   column-count: 5;
-  column-gap: 0; /* ✅ no gap between columns */
-  padding: 0; /* ✅ remove padding */
+  column-gap: 0;
+  padding: 0;
 }
 
 .imageWrapper {
   break-inside: avoid;
-  margin: 0; /* ✅ remove margin */
+  margin: 0;
   padding: 0;
   overflow: hidden;
 }
@@ -20,6 +20,6 @@
 @media (max-width: 1024px) {
   .gallery {
     column-count: 2;
-    column-gap: 0; /* keep no gap in responsive too */
+    column-gap: 0;
   }
 }

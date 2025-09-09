@@ -5,7 +5,7 @@ export default function HeroSection() {
     <div className={styles.hero}>
       <picture>
         {/* For screen width below 1000px */}
-        <source srcSet="/main-min.jpg" media="(max-width: 900px)" />
+        <source srcSet="/main-min.jpeg" media="(max-width: 900px)" />
         {/* Default / larger screens */}
         <img
           src="/main-photo.jpg"

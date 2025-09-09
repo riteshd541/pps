@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import styles from "./Gallery.module.css";
 
 const images = [
@@ -19,12 +20,20 @@ const images = [
   "/gallery/12.jpg",
   "/gallery/14.jpg",
 ];
+
 export default function Gallery() {
   return (
     <div className={styles.gallery}>
       {images.map((src, i) => (
         <div key={i} className={styles.imageWrapper}>
-          <img src={src} alt={`gallery ${i}`} />
+          <Image
+            src={src}
+            alt={`gallery ${i + 1}`}
+            width={450}
+            height={450}
+            sizes="(max-width: 768px) 250px, 450px"
+            style={{ objectFit: "cover" }}
+          />
         </div>
       ))}
     </div>
