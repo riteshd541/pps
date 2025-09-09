@@ -17,10 +17,10 @@ export default function SoulCinemaSection() {
         <div className="soul-cinema-content">
           <h2>SOUL+CINEMA</h2>
           <p>
-            Every wedding is unique and so are our films. Over the years HOTC
-            has set new benchmarks of storytelling within wedding realm and we
-            are fortunate to have experienced so unique cultures and traditions
-            across 25 countries and document stories that continuously overwhelm
+            Every wedding is unique and so are our films. Over the years we has
+            set new benchmarks of storytelling within wedding realm and we are
+            fortunate to have experienced so unique cultures and traditions
+            across 15 States and document stories that continuously overwhelm
             us.
           </p>
         </div>

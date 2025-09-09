@@ -60,7 +60,7 @@ const AwardWinningFilms = () => {
             With All Our Award Winning Films
           </h3>
           <p className="max-w-3xl mx-auto text-gray-300 mb-8 leading-relaxed">
-            We at HOTC celebrate the wild ones, the rule breakers, the
+            We at PPS celebrate the wild ones, the rule breakers, the
             travellers, the new age modern couple who are not afraid to
             experiment. We believe the ultimate goal of a wedding photographer
             is to justify the vibe of the wedding and the personalities of the
