@@ -113,7 +113,7 @@ export default function AboutPage() {
         </section>
 
         <h1 className="text-5xl font-extrabold text-gray-900 mb-16 text-center mt-16">
-          2024 -Today: Team of 30+ members
+          2024 -Today: Family of 30+ Professionals
         </h1>
         <img src="/about/team.jpg" alt="Team" className="w-full  shadow-lg" />
         <h1 className="text-5xl font-extrabold text-gray-900  text-center mt-16 mb-16">
