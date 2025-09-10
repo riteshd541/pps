@@ -4,21 +4,21 @@ import Image from "next/image";
 import styles from "./Gallery.module.css";
 
 const images = [
-  "/gallery/1.jpg",
-  "/gallery/2.jpg",
-  "/gallery/3.jpg",
-  "/gallery/4.jpg",
-  "/gallery/5.jpg",
-  "/gallery/6.jpg",
-  "/gallery/7.jpg",
-  "/gallery/c.jpg",
-  "/gallery/13.jpg",
-  "/gallery/8.jpg",
-  "/gallery/9.jpg",
-  "/gallery/10.jpg",
-  "/gallery/11.jpg",
-  "/gallery/12.jpg",
-  "/gallery/14.jpg",
+  "/gallery/img1.jpg",
+  "/gallery/img2.jpg",
+  "/gallery/img3.jpg",
+  "/gallery/img4.jpg",
+  "/gallery/img5.jpg",
+  "/gallery/img6.jpg",
+  "/gallery/img7.jpg",
+  "/gallery/imgc.jpg",
+  "/gallery/img13.jpg",
+  "/gallery/img8.jpg",
+  "/gallery/img9.jpg",
+  "/gallery/img10.jpg",
+  "/gallery/img11.jpg",
+  "/gallery/img12.jpg",
+  "/gallery/img14.jpg",
 ];
 
 export default function Gallery() {
