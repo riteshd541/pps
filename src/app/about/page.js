@@ -2,7 +2,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-import Image from "next/image";
+// import Image from "next/image";
 
 const milestones = [
   {
@@ -120,21 +120,27 @@ export default function AboutPage() {
         <h2 className="text-3xl font-extrabold text-gray-900 mb-10 text-center mt-10">
           We work we travel we enjoy
         </h2>
-        <Image
+        {/* <Image
           src="/about/team.jpg"
           width={1000}
           height={1000}
           alt="Team"
           className="w-full  shadow-lg"
-        />
+        /> */}
+        <img src="/about/team.jpg" alt="Team" className="w-full  shadow-lg" />
         <h1 className="text-5xl font-extrabold text-gray-900  text-center mt-16 mb-16">
           Created 500+ memories
         </h1>
-
+        {/* 
         <Image
           src="/about/FINAL_COVER.jpg"
           width={1000}
           height={1000}
+          alt="Team"
+          className="w-full  shadow-lg"
+        /> */}
+        <img
+          src="/about/FINAL_COVER.jpg"
           alt="Team"
           className="w-full  shadow-lg"
         />
