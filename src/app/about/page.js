@@ -2,6 +2,8 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+import Image from "next/image";
+
 const milestones = [
   {
     year: "2015",
@@ -29,7 +31,7 @@ const milestones = [
     title:
       "In 2019 , we came back from Mumbai with 1 year good experience in film making",
     description:
-      "Nitesh, Himanshu, and Divyanshu joined the team, bringing fresh energy and perspective to the group. Young & versatile : focus on films and wedding photography . Creating lasting memories through lenses.",
+      "Nitesh, Bunty, and Himanshu joined the team, bringing fresh energy and perspective to the group. Young & versatile : focus on films and wedding photography . Creating lasting memories through lenses.",
     image: "/about/2019.jpg",
   },
   {
@@ -112,15 +114,27 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <h1 className="text-5xl font-extrabold text-gray-900 mb-16 text-center mt-16">
+        <h1 className="text-5xl font-extrabold text-gray-900 mb-10 text-center mt-16">
           2024 -Today: Family of 30+ Professionals
         </h1>
-        <img src="/about/team.jpg" alt="Team" className="w-full  shadow-lg" />
+        <h2 className="text-3xl font-extrabold text-gray-900 mb-10 text-center mt-10">
+          We work we travel we enjoy
+        </h2>
+        <Image
+          src="/about/team.jpg"
+          width={1000}
+          height={1000}
+          alt="Team"
+          className="w-full  shadow-lg"
+        />
         <h1 className="text-5xl font-extrabold text-gray-900  text-center mt-16 mb-16">
           Created 500+ memories
         </h1>
-        <img
+
+        <Image
           src="/about/FINAL_COVER.jpg"
+          width={1000}
+          height={1000}
           alt="Team"
           className="w-full  shadow-lg"
         />

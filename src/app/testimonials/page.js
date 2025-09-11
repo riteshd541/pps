@@ -20,7 +20,7 @@ export default function Testimonials() {
     <>
       <Header backgroundColor="bg-black" />
       <section className="bg-gray-50 py-16 px-6">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-10">
+        <h2 className="text-5xl font-bold text-center text-gray-900 mt-10 mb-10">
           What People Say
         </h2>
 

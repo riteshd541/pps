@@ -15,13 +15,13 @@ export default function SoulCinemaSection() {
           poster="/video-poster.jpg"
         />
         <div className="soul-cinema-content">
-          <h2>SOUL+CINEMA</h2>
+          <h2>ELEGANT & EMOTIONAL</h2>
           <p>
-            Every wedding is unique and so are our films. Over the years we has
-            set new benchmarks of storytelling within wedding realm and we are
-            fortunate to have experienced so unique cultures and traditions
-            across 15 States and document stories that continuously overwhelm
-            us.
+            Every wedding is a story waiting to be told, and our films bring
+            those stories to life. Over the years, we’ve redefined wedding
+            storytelling—capturing emotions, moments, and memories across 15
+            states. Each culture, each couple, and each tradition has left an
+            unforgettable mark on us.
           </p>
         </div>
       </div>

@@ -1,25 +1,10 @@
-// import "./globals.css";
-// import ScrollWrapper from "./components/ScrollWrapper";
-// import Cursor from "./components/Cursor";
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="en">
-//       <body>
-//         <Cursor />
-//         <ScrollWrapper>{children}</ScrollWrapper>
-//       </body>
-//     </html>
-//   );
-// }
-
 import "./globals.css";
 import { Exo, Outfit, PT_Serif } from "next/font/google";
 
 const exo = Exo({
   subsets: ["latin"],
   variable: "--font-exo",
-  display: "swap", // good practice
+  display: "swap",
 });
 
 const outfit = Outfit({
@@ -30,7 +15,7 @@ const outfit = Outfit({
 
 const ptSerif = PT_Serif({
   subsets: ["latin"],
-  weight: ["400", "700"], // ✅ fix here
+  weight: ["400", "700"],
   variable: "--font-ptserif",
   display: "swap",
 });

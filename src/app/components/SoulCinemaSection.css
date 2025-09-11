@@ -83,5 +83,6 @@
   }
   .soul-cinema-content p {
     font-size: 0.8rem;
+    display: none;
   }
 }
