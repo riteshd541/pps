@@ -55,7 +55,12 @@ const Footer = () => {
         {/* Optional divider */}
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
           © {new Date().getFullYear()} Picture Perfect Studio. All rights
-          reserved.
+          reserved. <br /> Powered by{" "}
+          <span className="text-blue-500">
+            <a href="https://rdigitalcraft.com/" target="_blank">
+              RdigitalCraft
+            </a>
+          </span>
         </div>
       </div>
     </footer>
