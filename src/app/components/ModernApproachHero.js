@@ -21,28 +21,29 @@ export default function ModernApproachHero() {
         <div className="hero-text">
           <h1>
             <span style={{ color: "black" }} className="modern">
-              Turning Emotions
+              Picture Perfect Studio –
             </span>
             <br />
             <span style={{ color: "black" }} className="age-old">
               {" "}
-              Into Art
+              Best Wedding Photographer in Lucknow
             </span>
           </h1>
 
           <p className="p-4">
-            At Picture Perfect Studio, every photograph is more than just an
-            image—it’s a memory frozen in time, a piece of life’s most beautiful
-            story. Founded in 2015 by the dynamic duo, Sulok Sharan and Alok
-            Sharan, our studio is a creative space where passion meets
-            precision, and moments are transformed into timeless works of art.
+            At Picture Perfect Studio, we turn moments into memories. Based in
+            Lucknow, we offer wedding photography services that blend
+            creativity, emotion, and storytelling. Founded in 2015 by Sulok
+            Sharan and Alok Sharan, we are known for our candid wedding
+            photography in Lucknow, along with pre-wedding shoots, traditional
+            wedding coverage, and destination wedding photography.
           </p>
           <p className="p-4">
-            We’re not just photographers—we’re storytellers. And each shot we
-            take is carefully crafted to reflect the soul of the people and
-            moments we’re capturing. With Picture Perfect Studio, you’re not
-            just getting a photograph; you’re getting a piece of your story,
-            told in the most beautiful way possible.
+            We’re more than photographers—we’re storytellers. Whether it’s your
+            engagement, haldi, mehendi, or reception, we craft every frame to
+            reflect your unique journey. With us, you’re not just getting
+            pictures—you’re capturing timeless art by the top wedding
+            photographers in Lucknow.
           </p>
           <div className="hero-logos">
             <img src="/feature.png" alt="Awards" />
