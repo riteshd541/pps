@@ -17,7 +17,7 @@ export default function BlogPage() {
         <h1 className="text-4xl font-bold mb-8 text-center">
           Our Photography Blogs
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogs.map((blog) => (
             <div
               key={blog.slug}
