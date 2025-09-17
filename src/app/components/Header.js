@@ -14,10 +14,11 @@ const Header = ({ backgroundColor }) => {
   const PageRoutes = [
     { id: 1, routeName: "Home", pageUrl: "/" },
     { id: 2, routeName: "About Us", pageUrl: "/about" },
-    { id: 3, routeName: "Portfolio", pageUrl: "/portfolio" },
-    { id: 4, routeName: "Testimonials", pageUrl: "/testimonials" },
-    { id: 5, routeName: "Contact Us", pageUrl: "/contact" },
-    { id: 6, routeName: "Career", pageUrl: "/careers" },
+    { id: 3, routeName: "Blogs", pageUrl: "/blog" },
+    { id: 4, routeName: "Portfolio", pageUrl: "/portfolio" },
+    { id: 5, routeName: "Testimonials", pageUrl: "/testimonials" },
+    { id: 6, routeName: "Contact Us", pageUrl: "/contact" },
+    { id: 7, routeName: "Career", pageUrl: "/careers" },
   ];
 
   useEffect(() => {
