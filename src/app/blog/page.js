@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Photography Blogs | RDigitalCraft",
+  title: "Photography Blogs",
   description:
     "Explore blogs on wedding photography, videography, and tips to choose the best photographer in Lucknow.",
 };
@@ -26,7 +26,7 @@ export default function BlogPage() {
               <img
                 src={blog.image}
                 alt={blog.title}
-                className="rounded mb-4 w-full h-60 object-cover"
+                className="rounded mb-4 w-full h-auto object-cover"
               />
               <h2 className="text-2xl font-semibold">{blog.title}</h2>
               <p className="text-gray-600 text-sm">{blog.date}</p>

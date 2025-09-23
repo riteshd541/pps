@@ -31,7 +31,7 @@ export default function BlogDetail({ params }) {
         <img
           src={blog.image}
           alt={blog.title}
-          className="rounded mb-6 w-full max-h-[500px] object-cover"
+          className="rounded mb-6 w-full max-h-[800px] object-cover"
         />
         {/* <div
           className="prose prose-lg max-w-none prose-headings:mt-6 prose-headings:mb-4 prose-p:my-4 prose-ul:my-4 prose-li:my-1"
