@@ -33,8 +33,23 @@ export default function BlogDetail({ params }) {
           alt={blog.title}
           className="rounded mb-6 w-full max-h-[500px] object-cover"
         />
-        <div
+        {/* <div
           className="prose prose-lg max-w-none prose-headings:mt-6 prose-headings:mb-4 prose-p:my-4 prose-ul:my-4 prose-li:my-1"
+          dangerouslySetInnerHTML={{ __html: blog.content }}
+        /> */}
+
+        <div
+          className="
+    prose prose-lg max-w-none
+    prose-headings:mt-8    /* heading ke upar ka gap */
+    prose-headings:mb-5    /* heading ke niche ka gap */
+    prose-headings:font-bold  /* heading ko thoda bold karo */
+    prose-h2:text-3xl      /* h2 ko bada karo */
+    prose-h3:text-2xl      /* h3 ko thoda chhota but bold rakho */
+    prose-p:my-5           /* paragraphs ke beech gap */
+    prose-ul:my-5          /* list ke upar niche gap */
+    prose-li:my-1
+  "
           dangerouslySetInnerHTML={{ __html: blog.content }}
         />
       </div>
